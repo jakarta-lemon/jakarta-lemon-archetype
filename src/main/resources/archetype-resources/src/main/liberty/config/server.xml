@@ -1,0 +1,10 @@
+<server description="${artifactId} Server">
+    <httpEndpoint host="*" httpPort="${default.http.port}" httpsPort="${default.https.port}" id="defaultHttpEndpoint"/>
+    <webApplication location="${artifactId}.war" contextRoot="${context-root}"/>
+    <featureManager>
+        <feature>validation-3.1</feature>
+        <feature>restfulWS-4.0</feature>
+        <feature>cdi-4.1</feature>
+        <feature>jsonb-3.0</feature>
+    </featureManager>
+</server>
